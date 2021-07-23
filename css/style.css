@@ -221,25 +221,21 @@ Medium: 11px
     }
     
     .event-title {
-        animation: flicker 1s infinite alternate;
+        animation: flicker 1.5s infinite;
         color: #fff;
     }
     
     @keyframes flicker {
         0%,
-        10%,
         20%,
-        30%,
         40%,
         50%,
+        85%,
         100% {
             text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0088f7, 0 0 80px #0088f7, 0 0 90px #0088f7, 0 0 100px #0088f7, 0 0 150px #0088f7;
         }
-        5%,
         15%,
-        25%,
-        35%,
-        45%,
+        30%,
         75%,
         95% {
             text-shadow: none;
