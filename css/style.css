@@ -239,6 +239,7 @@ Medium: 11px
         24%,
         55% {
             text-shadow: none;
+            transition: all 0.5s;
         }
     }
     
