@@ -163,25 +163,4 @@ html {
         font-size: 0.8rem;
         text-align: center;
     }
-    .event-title {
-        animation: flicker 1.5s infinite alternate;
-        color: #fff;
-    }
-    @keyframes flicker {
-        0%,
-        18%,
-        22%,
-        25%,
-        53%,
-        57%,
-        100% {
-            text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 20px #0088f7, 0 0 40px #0088f7, 0 0 45px #0088f7, 0 0 50px #0088f7, 0 0 75px #0088f7;
-        }
-        20%,
-        24%,
-        55% {
-            text-shadow: none;
-            transition: all 0.5s;
-        }
-    }
 }
