@@ -163,6 +163,10 @@ html {
         font-size: 0.8rem;
         text-align: center;
     }
+    .event-title {
+        animation: flicker 1.5s infinite alternate;
+        color: #fff;
+    }
     @keyframes flicker {
         0%,
         18%,
