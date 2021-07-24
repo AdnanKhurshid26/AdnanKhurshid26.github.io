@@ -79,6 +79,31 @@ Medium: 11px
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
+    /**************** GENERAL REUSABLE COMPONENTS **************/
+    
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* border: solid 1px red; */
+    }
+    
+    .heading h1 {
+        font-size: 4.8rem;
+        color: #0088f7;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    
+    hr {
+        width: 5vw;
+        font-size: 4rem;
+        background-color: #0088f7;
+        border: 1px solid #0088f7;
+    }
+    /* *****************ANIMATIONS ******************/
     
     @keyframes fadeInAnimation {
         0% {
@@ -89,17 +114,24 @@ Medium: 11px
         }
     }
     
-    .section-hero {
-        height: 100vh;
-        width: 100vw;
-        background: linear-gradient(0deg, rgba(26, 31, 46, 0.5), rgba(26, 31, 46, 0.5)), url(hero.jpg);
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 16rem;
+    @keyframes flicker {
+        0%,
+        20%,
+        40%,
+        50%,
+        85%,
+        100% {
+            text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0088f7, 0 0 80px #0088f7, 0 0 90px #0088f7, 0 0 100px #0088f7, 0 0 150px #0088f7;
+        }
+        15%,
+        30%,
+        75%,
+        95% {
+            text-shadow: none;
+            transition: all 0.5s;
+        }
     }
+    /******************** HEADER ***********************/
     
     header {
         width: 100vw;
@@ -119,14 +151,11 @@ Medium: 11px
         justify-content: space-between;
         align-items: center;
     }
-    /* .logo {
-        border: solid 1px white;
-    } */
     
     .logo img {
         height: 4.8rem;
     }
-    /* NAV LIST */
+    /********* NAV LIST *************/
     
     .main-nav-list {
         display: flex;
@@ -162,6 +191,19 @@ Medium: 11px
     .main-nav-link.btn-cta:active {
         background-color: #1b3bc7;
         border: solid 2px #1b3bc7;
+    }
+    /******************** HERO SECTION ***************/
+    
+    .section-hero {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(0deg, rgba(26, 31, 46, 0.5), rgba(26, 31, 46, 0.5)), url(hero.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16rem;
     }
     
     .container {
@@ -225,24 +267,6 @@ Medium: 11px
         color: #fff;
     }
     
-    @keyframes flicker {
-        0%,
-        20%,
-        40%,
-        50%,
-        85%,
-        100% {
-            text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0088f7, 0 0 80px #0088f7, 0 0 90px #0088f7, 0 0 100px #0088f7, 0 0 150px #0088f7;
-        }
-        15%,
-        30%,
-        75%,
-        95% {
-            text-shadow: none;
-            transition: all 0.5s;
-        }
-    }
-    
     .container p {
         color: #fff;
         font-size: 2rem;
@@ -274,6 +298,7 @@ Medium: 11px
     .middle {
         width: 100vw;
     }
+    /******************** EVENT DETAILS *******************/
     
     .event-details {
         padding: 4.8rem 2.4rem;
@@ -318,35 +343,13 @@ Medium: 11px
         align-items: center;
         margin-bottom: 2rem;
     }
+    /********************** SPEAKERS ***********************/
     
     .speakers {
         max-width: 120rem;
         margin: 0 auto;
         padding: 4.8rem 2.4rem;
         /* border: solid 1px red; */
-    }
-    
-    .heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        /* border: solid 1px red; */
-    }
-    
-    .heading h1 {
-        font-size: 4.8rem;
-        color: #0088f7;
-        font-weight: 500;
-        margin-bottom: 1rem;
-    }
-    
-    hr {
-        width: 5vw;
-        font-size: 4rem;
-        background-color: #0088f7;
-        border: 1px solid #0088f7;
     }
     
     .speakers {
@@ -410,6 +413,7 @@ Medium: 11px
         font-size: 1.8rem;
         color: #333;
     }
+    /******************* ENROLL SECTION *********************/
     
     .enroll-cards {
         max-width: 120rem;
@@ -485,6 +489,7 @@ Medium: 11px
     .recommended:hover {
         background-color: #b7dfff;
     }
+    /***************** SPONSORS SECTION *********************/
     
     .sponsor-gallery {
         max-width: 120rem;
@@ -524,6 +529,7 @@ Medium: 11px
     .sponsor-card img:hover {
         transform: scale(1.05);
     }
+    /******************* FOOTER SECTION *********************/
     
     footer {
         display: flex;
