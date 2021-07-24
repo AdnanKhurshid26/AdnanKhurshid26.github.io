@@ -371,7 +371,8 @@ Medium: 11px
         padding: 2rem;
         flex-direction: column;
         justify-content: center;
-        align-items: center;z-index: 0;
+        align-items: center;
+        z-index: 0;
     }
     
     .speaker-card img {
