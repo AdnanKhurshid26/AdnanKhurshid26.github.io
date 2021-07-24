@@ -140,6 +140,7 @@ Medium: 11px
         background-color: transparent;
         position: fixed;
         background-color: rgba(76, 86, 138, 0.521);
+        z-index: 1;
     }
     
     nav {
