@@ -351,6 +351,7 @@ Medium: 11px
         margin: 0 auto;
         padding: 4.8rem 2.4rem;
         /* border: solid 1px red; */
+        z-index: 0;
     }
     
     .speakers {
@@ -370,7 +371,7 @@ Medium: 11px
         padding: 2rem;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;z-index: 0;
     }
     
     .speaker-card img {
@@ -424,6 +425,7 @@ Medium: 11px
         gap: 4.8rem;
         padding: 3.2rem 2rem;
         margin-bottom: 4.8rem;
+        z-index: 0;
     }
     
     .enroll-card {
@@ -438,6 +440,7 @@ Medium: 11px
         box-shadow: 7px 9px 2px 0 rgb(219, 219, 219);
         transition: all 0.5s;
         color: #333;
+        z-index: 0;
     }
     
     .enroll-card:hover {
